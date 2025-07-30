@@ -9,7 +9,7 @@ def main(url: str) -> str:
         gc = gspread.service_account(filename='project/credentials.json')
 
         """ Opens a Google Spreadsheet """
-        match = re.search(r"(?<=https://docs.google.com/spreadsheets/d/)[^/]+", url)
+        match = re.search(r"(?<=https://docs.google.com/document/d/e/)[^/]+", url)
         if match: 
             spreadsheet_id = match.group(0)
         else: 

@@ -33,9 +33,9 @@ def test_get_list_column():
     assert result == ['A', 'B', 'D', 'C']
 
 def test_find_max_value():
-    arr = ["0", "2", "4", "1", "3", "5", "8", "7"]
+    arr = [0, 1, 4, 3, 6, 5, 7, 9, 8, 11, 2]
     max_value = parsing.find_max_value(arr)
-    assert max_value == 8
+    assert max_value == 11
 
 def test_fill_structure(): 
     x = [0, 1, 2]
